@@ -1,0 +1,6 @@
+Flask
+langdetect
+indicnlp
+transformers
+nltk
+streamlit

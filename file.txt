@@ -1,0 +1,149 @@
+from docx import Document
+
+# Create a new Document
+doc = Document()
+
+# Title
+doc.add_heading('Project Report: Multilingual Essay Evaluation System using Streamlit', 0)
+
+# Certificate Section
+doc.add_heading('1. 📜 Certificate', level=1)
+doc.add_paragraph(
+    "This is to certify that the project titled 'Multilingual Essay Evaluation System using Streamlit' "
+    "has been successfully completed by [Your Name], under the guidance of [Supervisor's Name], at "
+    "NovaNectar Services Pvt. Ltd., in partial fulfillment of the requirements for the award of the degree "
+    "in Bachelor of Technology in Computer Science Engineering."
+)
+doc.add_paragraph("Supervisor’s Signature:")
+doc.add_paragraph("Examiner’s Signature:")
+doc.add_paragraph("Head of Department’s Signature:")
+
+# Acknowledgement Section
+doc.add_heading('2. 🙏 Acknowledgement', level=1)
+doc.add_paragraph(
+    "I extend my sincere gratitude to NovaNectar Services Pvt. Ltd. for providing me with the opportunity "
+    "to undertake this project. Special thanks to [Supervisor's Name] for their invaluable guidance and support "
+    "throughout the project."
+)
+doc.add_paragraph("I also thank the team at NovaNectar for their assistance and encouragement. Lastly, I am grateful "
+                  "to my family and friends for their unwavering support.")
+
+# Abstract Section
+doc.add_heading('3. ✨ Abstract', level=1)
+doc.add_paragraph(
+    "This project presents a Streamlit-based multilingual essay evaluation system designed to assess essays "
+    "written in various Indian languages. The system integrates Natural Language Processing (NLP) techniques to detect "
+    "the language of the essay, preprocess the text, analyze sentiment, provide constructive feedback, and generate concise summaries."
+    " Supporting nine Indian languages, the system leverages tools like IndicNLP, MBart (HuggingFace), and langdetect. "
+    "It evaluates essays based on vocabulary diversity, length, sentiment tone, sentence structure, and overall coherence. "
+    "This platform is particularly beneficial in educational settings to automate essay assessments while maintaining linguistic inclusivity."
+)
+
+# Introduction Section
+doc.add_heading('4. 🔍 Introduction', level=1)
+doc.add_paragraph(
+    "In a multilingual country like India, educational assessments often involve essays written in various regional languages. "
+    "Traditional evaluation methods are time-consuming and may lack consistency. This project aims to address these challenges by "
+    "developing an automated essay evaluation system that supports multiple Indian languages."
+)
+doc.add_paragraph(
+    "By integrating advanced NLP techniques, the system provides educators with a tool to efficiently assess essays, offering "
+    "consistent and objective evaluations. This not only saves time but also ensures fairness in the assessment process."
+)
+
+# Requirement Analysis Section
+doc.add_heading('5. ⚙️ Requirement Analysis and Feasibility Study', level=1)
+doc.add_heading('5.1 Functional Requirements', level=2)
+doc.add_paragraph(
+    "- Input: Essay text in any of the supported Indian languages.\n"
+    "- Language Detection: Automatically identify the language of the essay.\n"
+    "- Preprocessing: Tokenize and split sentences appropriately.\n"
+    "- Sentiment Analysis: Determine the tone of the essay.\n"
+    "- Feedback Generation: Provide constructive feedback on essay structure and content.\n"
+    "- Summarization: Generate a concise summary of the essay."
+)
+
+doc.add_heading('5.2 Non-Functional Requirements', level=2)
+doc.add_paragraph(
+    "- User-Friendly Interface: Simple and intuitive UI for ease of use.\n"
+    "- Performance: Quick processing of essays to provide real-time feedback.\n"
+    "- Scalability: Ability to support additional languages and features in the future."
+)
+
+doc.add_heading('5.3 Feasibility Study', level=2)
+doc.add_paragraph(
+    "| Feasibility Type | Status | Description |\n"
+    "|------------------|--------|-------------|\n"
+    "| Technical        | ✅ Feasible | Utilizes established NLP libraries and pre-trained models. |\n"
+    "| Operational      | ✅ Feasible | Streamlit provides an easy deployment mechanism. |\n"
+    "| Economic         | ✅ Feasible | Relies on open-source tools, minimizing costs. |\n"
+    "| Legal            | ✅ Feasible | Complies with open-source licenses. |"
+)
+
+# Methodology Section
+doc.add_heading('6. 🛠️ Methodology / Planning of Work', level=1)
+doc.add_heading('6.1 Planning Stage', level=2)
+doc.add_paragraph(
+    "- Define project objectives and scope.\n"
+    "- Research and select appropriate NLP tools and models.\n"
+    "- Design system architecture and user interface."
+)
+
+doc.add_heading('6.2 Implementation Stage', level=2)
+doc.add_paragraph(
+    "- Develop backend functions for language detection, preprocessing, sentiment analysis, feedback generation, and summarization.\n"
+    "- Integrate the backend with the Streamlit frontend.\n"
+    "- Test the system with sample essays in different languages."
+)
+
+doc.add_heading('6.3 Deployment Stage', level=2)
+doc.add_paragraph(
+    "- Deploy the application on a local server or cloud platform.\n"
+    "- Ensure the system is accessible to intended users."
+)
+
+doc.add_heading('6.4 Documentation', level=2)
+doc.add_paragraph(
+    "- Prepare user manuals and technical documentation.\n"
+    "- Document code with appropriate comments for maintainability."
+)
+
+# Technology and Tools Section
+doc.add_heading('7. 🧰 Technology, Tools, and Languages Used', level=1)
+doc.add_paragraph(
+    "| Category            | Tools / Libraries |\n"
+    "|---------------------|------------------|\n"
+    "| **Frontend**        | Streamlit        |\n"
+    "| **Backend Language**| Python 3.x       |\n"
+    "| **NLP Tools**       | nltk, IndicNLP, langdetect, HuggingFace Transformers |\n"
+    "| **Model Used**      | MBart (facebook/mbart-large-50-many-to-many-mmt) |\n"
+    "| **Development Environment** | VSCode, Jupyter Notebook |\n"
+    "| **Deployment**      | Streamlit Sharing / Local Server |\n"
+    "| **Version Control** | Git              |"
+)
+
+# Bibliography Section
+doc.add_heading('8. 📚 Summary / Bibliography', level=1)
+doc.add_heading('8.1 Summary', level=2)
+doc.add_paragraph(
+    "The Multilingual Essay Evaluation System is a robust solution for assessing essays written in various Indian languages. "
+    "By integrating multiple open-source NLP tools, it provides educators with a consistent and efficient method for essay evaluation, "
+    "promoting fairness and inclusivity in the assessment process."
+)
+
+doc.add_heading('8.2 Bibliography / References', level=2)
+doc.add_paragraph(
+    "- [HuggingFace Transformers Documentation](https://huggingface.co/docs/transformers/index)\n"
+    "- [Indic NLP Library](https://anoopkunchukuttan.github.io/indic_nlp_library/)\n"
+    "- [MBart50 Paper - Facebook AI](https://arxiv.org/abs/2001.08210)\n"
+    "- [Streamlit Documentation](https://docs.streamlit.io/)\n"
+    "- [NLTK Tokenization](https://www.nltk.org/)\n"
+    "- [Langdetect GitHub](https://github.com/Mimino666/langdetect)"
+)
+
+# Save the Document
+file_path = "/mnt/data/Multilingual_Essay_Evaluation_System_Report.docx"
+doc.save(file_path)
+
+file_path  # Return file path to download
+

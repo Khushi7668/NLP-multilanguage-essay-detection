@@ -33,30 +33,18 @@ essay_evaluation_streamlit/
 ⚙️ Installation
 Clone the repository
 
-bash
-Copy
-Edit
 git clone https://github.com/your-username/essay_evaluation_streamlit.git
 cd essay_evaluation_streamlit
 Create a virtual environment (recommended)
 
-bash
-Copy
-Edit
 python -m venv venv
 venv\Scripts\activate       # On Windows
 source venv/bin/activate    # On macOS/Linux
 Install dependencies
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
 Run the Streamlit app
 
-bash
-Copy
-Edit
 streamlit run streamlit_app.py
 🧠 Technology Stack
 Python 3.10+

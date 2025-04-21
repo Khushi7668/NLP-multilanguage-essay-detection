@@ -100,6 +100,5 @@ Indic NLP Library
 This project is licensed under the MIT License.
 
 ✍️ Author
-Khushi [Your Full Name if preferred]
-📧 [your-email@example.com]
-🔗 [LinkedIn/GitHub/Portfolio if applicable]
+Km Khushi
+📧 kk9648259@gmail.com

@@ -45,7 +45,7 @@ Install dependencies
 pip install -r requirements.txt
 Run the Streamlit app
 
-streamlit run streamlit_app.py
+for run:- python -m streamlit run streamlit_app.py
 🧠 Technology Stack
 Python 3.10+
 
